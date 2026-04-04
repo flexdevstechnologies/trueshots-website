@@ -1,0 +1,53 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  /* Clean, modern body font */
+  --font-heading: 'Italiana', serif;
+  /* Fashionable, luxury heading font */
+
+  /* Luxury Color Palette */
+  --bg-dark: #0d0d0d;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --text-primary: #ededed;
+  --text-secondary: #a0a0a0;
+
+  --gold: #D4AF37;
+  --gold-light: #F8E8B0;
+  --gold-dark: #AA8C2C;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 500;
+  color: var(--gold);
+  text-decoration: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+button {
+  cursor: pointer;
+}

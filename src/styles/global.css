@@ -1,0 +1,74 @@
+/* src/styles/global.css
+   Theme A3 + S3 + Purple background
+   NOW USING URBANIST as primary body font
+*/
+
+/* ROOT COLORS (Same) */
+:root{
+  --page-bg: #0D0D0D;
+  --container-bg: #141414;
+  --text-color: #EDEDED;
+  --muted-text: #CFC7BF;
+  --gold: #D4AF37;
+  --gold-dark: #B8962E;
+  --border: #2A2A2A;
+  --divider-opacity: rgba(212,175,55,0.25);
+}
+
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* PURPLE PAGE BACKGROUND (unchanged) */
+body {
+  font-family: "Urbanist", sans-serif;   /* UPDATED */
+
+  background: linear-gradient(
+    135deg,
+    #1b1529 0%,
+    #0f0c1b 50%,
+    #0a0812 100%
+  );
+
+  color: var(--text-color);
+}
+
+/* MAIN CONTENT WRAPPER (same) */
+.main-wrapper{
+  width: 92%;
+  max-width: 1200px;
+  margin: 80px auto 80px;
+  background: var(--container-bg);
+  border-radius: 16px;
+  padding: 40px;
+  min-height: calc(100vh - 160px);
+
+  box-shadow:
+    0 6px 30px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.02);
+
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
+section { padding: 70px 0; }
+
+/* Gold Divider (same) */
+.gold-divider {
+  height: 8px;
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(212,175,55,1),
+    rgba(212,175,55,0.85),
+    rgba(212,175,55,0.5),
+    rgba(212,175,55,0.18)
+  );
+  box-shadow:
+    0 4px 16px rgba(212,175,55,0.18),
+    0 8px 40px rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.25);
+}

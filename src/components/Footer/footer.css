@@ -1,0 +1,161 @@
+/* src/components/Footer/footer.css */
+
+.footer {
+  background: linear-gradient(135deg, #100c14, #0b090d);
+  color: #fff;
+  padding: 60px 20px 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  opacity: 0.6;
+}
+
+.footer-title {
+  font-family: 'Italiana', serif;
+  /* Updated to luxury font */
+  font-size: clamp(40px, 8vw, 120px);
+  /* Massive responsive font */
+  font-weight: 300;
+  letter-spacing: -2px;
+  color: var(--gold);
+  /* Changed to Yellow */
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.footer-locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Outfit', sans-serif;
+  color: #ccc;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.footer-locations div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  color: #555;
+  font-size: 20px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.footer-social a {
+  color: #d4af37;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer-contact a {
+  color: #eee;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  transition: 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #d4af37;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0 20px;
+}
+
+.footer-nav a {
+  color: #aaa;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #d4af37;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-title {
+    font-size: 32px;
+    /* Smaller title on mobile */
+    margin-bottom: 24px;
+    letter-spacing: 0;
+  }
+
+  /* Stack locations vertically */
+  .footer-locations {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Hide the dots between locations on mobile since they stack */
+  .footer-locations .dot {
+    display: none;
+  }
+
+  /* Adjust contact info size/stacking */
+  .footer-contact {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Hide the pipe separator in contact info */
+  .footer-separator {
+    display: none;
+  }
+
+  .footer-break {
+    display: block !important;
+  }
+
+  /* Footer Nav: Stack or wrap */
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px 0 16px;
+  }
+}

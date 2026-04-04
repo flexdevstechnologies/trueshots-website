@@ -1,0 +1,95 @@
+/* src/components/Gallery/gallery.css */
+
+/* ─── Section Wrapper ─────────────────────────────── */
+.gallery-section {
+  padding: 80px 4% 100px;
+  background: linear-gradient(to bottom, #0d0d0d, #141414, #0d0d0d);
+  min-height: 100vh;
+  position: relative;
+}
+
+.gallery-wrapper {
+  max-width: 1600px;   /* ✅ Wider max-width = more photos visible per row */
+  margin: 0 auto;
+}
+
+/* ─── Title ───────────────────────────────────────── */
+.gallery-title {
+  font-family: 'Italiana', serif;
+  font-size: clamp(36px, 7vw, 75px);
+  font-weight: 300;
+  color: var(--gold, #d4af37);
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.25);
+}
+
+.gallery-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: clamp(13px, 2vw, 16px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 50px;  /* ✅ Space between subtitle and grid */
+}
+
+/* ─── Each Photo Card ─────────────────────────────── */
+.gallery-item-wrapper {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-item-wrapper:hover {
+  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2); /* ✅ Gold glow on hover */
+}
+
+/* ─── Lightbox Overrides ──────────────────────────── */
+.yarl__container {
+  background: rgba(8, 8, 8, 0.97) !important;
+  backdrop-filter: blur(12px);
+}
+
+.yarl__button {
+  color: var(--gold, #d4af37) !important;
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+}
+
+.yarl__thumbnails_thumbnail {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.yarl__thumbnails_thumbnail_active,
+.yarl__thumbnails_thumbnail:hover {
+  border-color: var(--gold, #d4af37) !important; /* ✅ Gold border on active thumb */
+}
+
+/* ─── Mobile Responsive ───────────────────────────── */
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 60px 3% 80px;
+  }
+
+  .gallery-title {
+    margin-bottom: 8px;
+  }
+
+  .gallery-subtitle {
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-section {
+    padding: 50px 2% 60px;
+  }
+
+  .gallery-subtitle {
+    margin-bottom: 25px;
+  }
+}
