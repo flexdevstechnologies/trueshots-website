@@ -22,13 +22,18 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
   overflow-x: hidden;
 }
 
