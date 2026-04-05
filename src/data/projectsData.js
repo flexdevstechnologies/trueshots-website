@@ -60,7 +60,7 @@ export const projects = [
     ],
   },
   {
-    title: "Collaborative Works",
+    title: "Collaborative Work",
     cover: "/images/cover-photos/collaborative-work.jpeg",
     images: [
       { src: "/images/collaborative-works/cw1.png" },
