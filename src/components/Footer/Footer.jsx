@@ -39,8 +39,8 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="footer-social">
-        <a href="mailto:flexdevstechnologies@gmail.com"><FaEnvelope /></a>
-        <a href="tel:+918608824373"><FaPhoneAlt /></a>
+        <a href="mailto:trueshotsphotography3@gmail.com"><FaEnvelope /></a>
+        <a href="tel:+918870763304"><FaPhoneAlt /></a>
         <a href="https://www.instagram.com/true_shots_4/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <p className="footer-copy">© 2025 TRUE SHOTS PHOTOGRAPHY. All rights reserved.</p>
+      <p className="footer-copy">© 2026 TRUE SHOTS PHOTOGRAPHY. All rights reserved.</p>
 
     </footer>
   );
