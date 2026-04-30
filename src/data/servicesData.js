@@ -19,12 +19,7 @@ export const servicesList = [
       "Birthdays, corporate events, concerts, and more — fully documented.",
     icon: "/icons/event.png",
   },
-  {
-    title: "Product Photography",
-    description:
-      "High-quality product shots for brands, ecommerce, and advertising.",
-    icon: "/icons/product.png",
-  },
+
   {
     title: "Outdoor Photoshoots",
     description:

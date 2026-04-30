@@ -19,11 +19,7 @@ const services = [
     title: "Event Coverage",
     desc: "Professional photography for birthdays, engagements, and corporate events.",
   },
-  {
-    icon: <FaBoxOpen />,
-    title: "Product Shoots",
-    desc: "High-quality product photography to elevate your brand and showcase details.",
-  },
+
   {
     icon: <FaUserTie />,
     title: "Portfolio Shoots",

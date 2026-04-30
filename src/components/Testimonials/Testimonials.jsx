@@ -16,17 +16,22 @@ const testimonials = [
   {
     text: "True Shots Photography delivers exceptional image quality and beautifully captures genuine, emotional moments with an artistic touch. Their professional and friendly team ensures a smooth experience—highly recommended!",
     author: "Padmaja",
-    role: "Client"
+    role: "Portrait"
   },
   {
     text: "Had a wonderful experience with \"Trueshots\". The quality of the photos exceeded our expectations — every image was beautifully composed, well-lit, and full of natural emotion. The team's professionalism and friendly approach made the process comfortable and enjoyable. They nailed every important moment, and we're thrilled with the results! Highly recommended for capturing life's precious moments 💫. \"Photography is the story we fail to put into words\" 📸📸",
     author: "Venkat Ragavan",
-    role: "Client"
+    role: "Portrait"
   },
   {
     text: "I had an amazing experience with this young photographers. I truly appreciate the effort and creativity they put into capturing my photos. The way they handled the shoot and delivered the final output was impressive. I was able to see a completely different version of myself through their lens, and that made the experience even more special. I would highly recommend them without a second thought!",
     author: "Kiran Kumar",
     role: "Portrait"
+  },
+  {
+    text: "True shots,thanks for the video courtesy and edit courtesy of my housewarming ceremony 🏠✨.\nYou really captured and made a memorable video and photos which myself and my wife will cherish forever;  Buying a house was one of our primary goal and dream since childhood 🤩.\nThanks again 🥳.\nI wish True Shots will grow big and make more wonders in many great occasions in people’s life 😍",
+    author: "Ajay",
+    role: "Housewarming"
   }
 ];
 
