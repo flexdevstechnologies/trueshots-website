@@ -33,6 +33,9 @@ export const projects = [
       { src: "/images/portrait/p4.png" },
       { src: "/images/portrait/p5.png" },
       { src: "/images/portrait/p6.png" },
+      { src: "/images/portrait/p7.png" },
+      { src: "/images/portrait/p8.png" },
+      { src: "/images/portrait/p9.png" },
     ],
   },
   {
