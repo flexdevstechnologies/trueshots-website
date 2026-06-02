@@ -47,6 +47,16 @@ const Showcase = () => {
 
   const [open, setOpen] = useState(false);
   const [currentGallery, setCurrentGallery] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleOpenProject = (project) => {
     if (project.images && project.images.length > 0) {
@@ -59,11 +69,15 @@ const Showcase = () => {
     <section 
       className="showcase-section" 
       ref={containerRef}
-      style={{ "--dynamic-height": `${Math.max(300, projects.length * 75)}vh` }}
+      style={{ "--dynamic-height": isMobile ? "auto" : `${Math.max(300, projects.length * 75)}vh` }}
     >
       <div className="showcase-sticky">
         <h2 className="showcase-title">Featured Works</h2>
-        <motion.div style={{ x, width: "max-content" }} className="showcase-gallery" ref={galleryRef}>
+        <motion.div 
+          style={isMobile ? { width: "100%" } : { x, width: "max-content" }} 
+          className="showcase-gallery" 
+          ref={galleryRef}
+        >
           {projects.map((project, i) => (
             <motion.div
               key={i}

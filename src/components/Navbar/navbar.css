@@ -175,6 +175,12 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 900px) {
+  .navbar.scrolled {
+    width: 100% !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+  }
+
   .nav-menu {
     display: none;
   }
